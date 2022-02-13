@@ -42,18 +42,18 @@ section {
     margin: auto;
 }
 
-.about,
-.services,
-.skills,
+.apropos,
+.passions,
+.competences,
 .teams,
 .contact,
 footer {
     font-family: 'Poppins', sans-serif;
 }
 
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
+.apropos .apropos-content,
+.passions .serv-content,
+.competences .competences-content,
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
@@ -196,7 +196,7 @@ section .title::after {
 
 /* Début css accueil */
 
-.home {
+.accueil {
     display: flex;
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/photo-profile.jpg);
     background-position: center;
@@ -210,36 +210,36 @@ section .title::after {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.home .max-width {
+.accueil .max-width {
     width: 100%;
     display: flex;
 }
 
-.home .max-width .row {
+.accueil .max-width .row {
     margin-right: 0;
 }
 
-.home .home-content .text-1 {
+.accueil .accueil-content .text-1 {
     font-size: 27px;
 }
 
-.home .home-content .text-2 {
+.accueil .accueil-content .text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 
-.home .home-content .text-3 {
+.accueil .accueil-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
 
-.home .home-content .text-3 span {
+.accueil .accueil-content .text-3 span {
     color: #004B94;
     font-weight: 500;
 }
 
-.home .home-content a {
+.accueil .accueil-content a {
     display: inline-block;
     background: #004B94;
     color: #fff;
@@ -252,7 +252,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.home .home-content a:hover {
+.accueil .accueil-content a:hover {
     color: #004B94;
     background: none;
 }
@@ -260,40 +260,40 @@ section .title::after {
 
 /* Début css à propos */
 
-.about .title::after {
+.apropos .title::after {
     content: "qui suis-je ";
 }
 
-.about .about-content .left {
+.apropos .apropos-content .left {
     width: 45%;
 }
 
-.about .about-content .left img {
+.apropos .apropos-content .left img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.about .about-content .right {
+.apropos .apropos-content .right {
     width: 55%;
 }
 
-.about .about-content .right .text {
+.apropos .apropos-content .right .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.about .about-content .right .text span {
+.apropos .apropos-content .right .text span {
     color: #004B94;
 }
 
-.about .about-content .right p {
+.apropos .apropos-content .right p {
     text-align: justify;
 }
 
-.about .about-content .right a {
+.apropos .apropos-content .right a {
     display: inline-block;
     background: #004B94;
     color: #fff;
@@ -306,7 +306,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover {
+.apropos .apropos-content .right a:hover {
     color: #004B94;
     background: none;
 }
@@ -314,24 +314,24 @@ section .title::after {
 
 /* Début css passions */
 
-.services,
+.passions,
 .teams {
     color: #fff;
     background: #111;
 }
 
-.services .title::before,
+.passions .title::before,
 .teams .title::before {
     background: #fff;
 }
 
-.services .title::after,
+.passions .title::after,
 .teams .title::after {
     background: #111;
     content: "ce qui m'occupe";
 }
 
-.services .serv-content .card {
+.passions .serv-content .card {
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -341,29 +341,29 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover {
+.passions .serv-content .card:hover {
     background: #004B94;
 }
 
-.services .serv-content .card .box {
+.passions .serv-content .card .box {
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.passions .serv-content .card:hover .box {
     transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.passions .serv-content .card i {
     font-size: 50px;
     color: #004B94;
     transition: color 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.passions .serv-content .card:hover i {
     color: #fff;
 }
 
-.services .serv-content .card .text {
+.passions .serv-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -372,25 +372,25 @@ section .title::after {
 
 /* Début css compétences */
 
-.skills .title::after {
+.competences .title::after {
     content: "ce que je sais";
 }
 
-.skills .skills-content .column {
+.competences .competences-content .column {
     width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text {
+.competences .competences-content .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.skills .skills-content .left p {
+.competences .competences-content .left p {
     text-align: justify;
 }
 
-.skills .skills-content .left a {
+.competences .competences-content .left a {
     display: inline-block;
     background: #004B94;
     color: #fff;
@@ -403,35 +403,35 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.skills .skills-content .left a:hover {
+.competences .competences-content .left a:hover {
     color: #004B94;
     background: none;
 }
 
-.skills .skills-content .right .bars {
+.competences .competences-content .right .bars {
     margin-bottom: 15px;
 }
 
-.skills .skills-content .right .info {
+.competences .competences-content .right .info {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
 
-.skills .skills-content .right span {
+.competences .competences-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
 
-.skills .skills-content .right .line {
+.competences .competences-content .right .line {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
 
-.skills .skills-content .right .line::before {
+.competences .competences-content .right .line::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -440,23 +440,23 @@ section .title::after {
     background: #004B94;
 }
 
-.skills-content .right .html::before {
+.competences-content .right .html::before {
     width: 90%;
 }
 
-.skills-content .right .css::before {
+.competences-content .right .css::before {
     width: 60%;
 }
 
-.skills-content .right .js::before {
+.competences-content .right .js::before {
     width: 80%;
 }
 
-.skills-content .right .php::before {
+.competences-content .right .php::before {
     width: 50%;
 }
 
-.skills-content .right .mysql::before {
+.competences-content .right .mysql::before {
     width: 70%;
 }
 
@@ -478,6 +478,10 @@ section .title::after {
 
 .teams .carousel .card:hover {
     background: #004B94;
+}
+
+.teams .carousel .card:hover .bouton button {
+    background-color: #222;
 }
 
 .teams .carousel .card .box {
@@ -511,7 +515,24 @@ section .title::after {
     border-color: #fff;
 }
 
-.owl-dots {
+.teams .carousel .card .bouton button {
+    margin-top: 15px;
+    margin-right: 5px;
+    height: 40px;
+    width: 80px;
+    border: 2px solid #004B94;
+    background: #004B94;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.teams .carousel .card .bouton button:hover {
+    background: #222;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.teams .carousel .card .button button:hover .owl-dots {
     text-align: center;
     margin-top: 20px;
 }
@@ -676,7 +697,7 @@ footer span a:hover {
 /* Partie responsive */
 
 @media (max-width: 1104px) {
-    .about .about-content .left img {
+    .apropos .apropos-content .left img {
         height: 350px;
         width: 350px;
     }
@@ -718,35 +739,35 @@ footer span a:hover {
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2 {
+    .accueil .accueil-content .text-2 {
         font-size: 70px;
     }
-    .home .home-content .text-3 {
+    .accueil .accueil-content .text-3 {
         font-size: 35px;
     }
-    .home .home-content a {
+    .accueil .accueil-content a {
         font-size: 23px;
         padding: 10px 30px;
     }
     .max-width {
         max-width: 930px;
     }
-    .about .about-content .column {
+    .apropos .apropos-content .column {
         width: 100%;
     }
-    .about .about-content .left {
+    .apropos .apropos-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right {
+    .apropos .apropos-content .right {
         flex: 100%;
     }
-    .services .serv-content .card {
+    .passions .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    .competences .competences-content .column,
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
@@ -757,29 +778,32 @@ footer span a:hover {
     .max-width {
         padding: 0 23px;
     }
-    .home .home-content .text-2 {
+    .accueil .accueil-content .text-2 {
         font-size: 60px;
     }
-    .home .home-content .text-3 {
+    .accueil .accueil-content .text-3 {
         font-size: 32px;
     }
-    .home .home-content a {
+    .accueil .accueil-content a {
         font-size: 20px;
     }
-    .services .serv-content .card {
+    .passions .serv-content .card {
         width: 100%;
+    }
+    .apropos .apropos-content .right .text {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2 {
+    .accueil .accueil-content .text-2 {
         font-size: 50px;
     }
-    .home .home-content .text-3 {
+    .accueil .accueil-content .text-3 {
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text {
+    .apropos .apropos-content .right .text,
+    .competences .competences-content .left .text {
         font-size: 19px;
     }
     .contact .right form .fields {
