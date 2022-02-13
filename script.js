@@ -1,13 +1,13 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-        // sticky navbar on scroll script
+        // apparition de la navbar au scroll
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
             $('.navbar').removeClass("sticky");
         }
 
-        // scroll-up button show/hide script
+        // apparition du bouton au scroll
         if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
         } else {
@@ -15,40 +15,40 @@ $(document).ready(function() {
         }
     });
 
-    // slide-up script
+    // allez en haut de la page au click
     $('.scroll-up-btn').click(function() {
         $('html').animate({ scrollTop: 0 });
-        // removing smooth scroll on slide-up button click
+
         $('html').css("scrollBehavior", "auto");
     });
 
     $('.navbar .menu li a').click(function() {
-        // applying again smooth scroll on menu items click
+
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
+    // menu navigation responsive
     $('.menu-btn').click(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
+    // ecriture automatique
     var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        strings: ["Étudiant", "Gamer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        strings: ["un Etudiant", "un Gamer", "un future Web Developper"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    // owl carousel script
+    // code carousel framework 
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,

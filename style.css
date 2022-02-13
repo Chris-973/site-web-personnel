@@ -1,5 +1,3 @@
-/*  import google fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 * {
     margin: 0;
@@ -13,7 +11,7 @@ html {
 }
 
 
-/* custom scroll bar */
+/* bar de scroll custom */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -32,7 +30,7 @@ html {
 }
 
 
-/* all similar content styling codes */
+/* tous les styles similaires */
 
 section {
     padding: 100px 0;
@@ -96,7 +94,7 @@ section .title::after {
 }
 
 
-/* navbar styling */
+/* Début css NavBar */
 
 .navbar {
     position: fixed;
@@ -156,7 +154,7 @@ section .title::after {
 }
 
 
-/* menu btn styling */
+/* Boutons menu + scroll top */
 
 .menu-btn {
     color: #fff;
@@ -196,7 +194,7 @@ section .title::after {
 }
 
 
-/* home section styling */
+/* Début css accueil */
 
 .home {
     display: flex;
@@ -260,10 +258,10 @@ section .title::after {
 }
 
 
-/* about section styling */
+/* Début css à propos */
 
 .about .title::after {
-    content: "who i am";
+    content: "qui suis-je ";
 }
 
 .about .about-content .left {
@@ -314,7 +312,7 @@ section .title::after {
 }
 
 
-/* services section styling */
+/* Début css passions */
 
 .services,
 .teams {
@@ -330,7 +328,7 @@ section .title::after {
 .services .title::after,
 .teams .title::after {
     background: #111;
-    content: "what i provide";
+    content: "ce qui m'occupe";
 }
 
 .services .serv-content .card {
@@ -372,10 +370,10 @@ section .title::after {
 }
 
 
-/* skills section styling */
+/* Début css compétences */
 
 .skills .title::after {
-    content: "what i know";
+    content: "ce que je sais";
 }
 
 .skills .skills-content .column {
@@ -463,10 +461,10 @@ section .title::after {
 }
 
 
-/* teams section styling */
+/* Début css projets */
 
 .teams .title::after {
-    content: "who with me";
+    content: "ce que j'ai fait";
 }
 
 .teams .carousel .card {
@@ -539,10 +537,10 @@ section .title::after {
 }
 
 
-/* contact section styling */
+/* Début css contact */
 
 .contact .title::after {
-    content: "get in touch";
+    content: "mes contacts";
 }
 
 .contact .contact-content .column {
@@ -656,7 +654,7 @@ section .title::after {
 }
 
 
-/* footer section styling */
+/* Début css footer */
 
 footer {
     background: #111;
@@ -675,7 +673,7 @@ footer span a:hover {
 }
 
 
-/* responsive media query start */
+/* Partie responsive */
 
 @media (max-width: 1104px) {
     .about .about-content .left img {
