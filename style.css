@@ -441,23 +441,23 @@ section .title::after {
 }
 
 .competences-content .right .html::before {
-    width: 90%;
-}
-
-.competences-content .right .css::before {
-    width: 60%;
-}
-
-.competences-content .right .js::before {
     width: 80%;
 }
 
-.competences-content .right .php::before {
+.competences-content .right .css::before {
+    width: 80%;
+}
+
+.competences-content .right .js::before {
     width: 50%;
 }
 
+.competences-content .right .php::before {
+    width: 60%;
+}
+
 .competences-content .right .mysql::before {
-    width: 70%;
+    width: 55%;
 }
 
 
