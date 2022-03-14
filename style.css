@@ -503,7 +503,12 @@ section .title::after {
 .teams .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 10px 0 35px 0;
+}
+
+.teams .carousel .card p {
+    text-align: justify;
+    margin: 0 0 20px 0;
 }
 
 .teams .carousel .card img {
@@ -523,17 +528,19 @@ section .title::after {
     margin-top: 15px;
     margin-right: 5px;
     height: 40px;
-    width: 80px;
+    width: 90px;
     border: 2px solid #004B94;
     background: #004B94;
     color: #fff;
     border-radius: 6px;
+    transition: all .3s ease;
 }
 
 .teams .carousel .card .bouton button:hover {
     background: #222;
     cursor: pointer;
     border: 2px solid #fff;
+    transition: all .3s ease;
 }
 
 .teams .carousel .card .button button:hover .owl-dots {
