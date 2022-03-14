@@ -35,14 +35,14 @@ $(document).ready(function() {
 
     // ecriture automatique
     var typed = new Typed(".typing", {
-        strings: ["Étudiant", "Gamer"],
+        strings: ["Étudiant", "en informatique"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["un Etudiant", "un Gamer"],
+        strings: ["un Etudiant", "en informatique"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
