@@ -460,6 +460,10 @@ section .title::after {
     width: 55%;
 }
 
+.competences-content .right .git::before {
+    width: 50%;
+}
+
 
 /* Début css projets */
 
