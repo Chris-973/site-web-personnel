@@ -12,4 +12,11 @@ function sendMail(params) {
         .then(function(res) {
             console.log("success", res.status);
         })
+
 }
+
+const btn = document.querySelector('#btn');
+
+btn.addEventListener('click', () => {
+    alert("Message envoyé !")
+})
