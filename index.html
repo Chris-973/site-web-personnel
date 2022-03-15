@@ -14,6 +14,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
+    <!-- Mail script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("VCYSPhC9_KhRkOdnV");
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -256,20 +264,20 @@
                     <form class="contact_form" action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input class="name" type="text" placeholder="Nom" required>
+                                <input id="name" type="text" placeholder="Nom" required>
                             </div>
                             <div class="field email">
-                                <input class="mail" type="email" placeholder="Email" required>
+                                <input id="mail" type="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input class="subject" type="text" placeholder="Sujet" required>
+                            <input id="sujet" type="text" placeholder="Sujet" required>
                         </div>
                         <div class="field textarea">
-                            <textarea class="message" cols="30" rows="10" placeholder="Votre message ..." required></textarea>
+                            <textarea id="message" cols="30" rows="10" placeholder="Votre message ..." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Envoyé</button>
+                            <button type="submit" onclick='sendMail()'>Envoyé</button>
                         </div>
                     </form>
                 </div>
@@ -282,7 +290,10 @@
         <span>Créer par <a href="#">Christopher Marie-Angélique</a> | <span class="far fa-copyright"></span> 2022 Tous droits réservés.</span>
     </footer>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="app.js">
+        alert("Le message a été envoyé !");
+        window.location.href = "index.html";
+    </script>
     <script src="script.js"></script>
 </body>
 

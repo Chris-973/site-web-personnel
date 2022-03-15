@@ -70,29 +70,4 @@ $(document).ready(function() {
             }
         }
     });
-
-    const form = document.querySelector('.contact_form');
-
-    function sendMsg(e) {
-        e.preventDefault();
-        // Variables
-        const name = document.querySelector('.name'),
-            mail = document.querySelector('.mail'),
-            subject = document.querySelector('.subject'),
-            message = document.querySelector('.message');
-
-        // Fonction envoyé message
-        Email.send({
-            SecureToken: "039ef2dc-4541-4d52-a064-04c1292a79c6",
-            To: 'christopher2211.angelique@gmail.com',
-            From: email.value,
-            Subject: subject.value,
-            Body: message.value
-        }).then(
-            message => alert(message)
-        );
-    }
-
-    // Ajout du eventListener
-    form.addEventListener('submit', sendMsg);
 });
