@@ -694,7 +694,7 @@ section .title::after {
 
 footer {
     background: #111;
-    padding: 25px 70px 25px 50px;
+    padding: 25px 100px 25px 50px;
     color: #fff;
     text-align: center;
     display: flex;
@@ -805,6 +805,20 @@ footer a:hover {
         width: 100%;
         margin-bottom: 35px;
     }
+    footer p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 859px) {
+    footer {
+        display: block;
+        padding: 0 0 0 0;
+    }
+    footer p {
+        padding-top: 10px;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -825,12 +839,6 @@ footer a:hover {
     }
     .apropos .apropos-content .right .text {
         font-size: 20px;
-    }
-}
-
-@media (max-width: 596px) {
-    footer {
-        display: inline-block;
     }
 }
 
@@ -875,5 +883,11 @@ footer a:hover {
     .apropos .apropos-content .left img {
         height: 280px;
         width: 280px;
+    }
+}
+
+@media (max-width: 450px) {
+    footer p {
+        font-size: 15px;
     }
 }
