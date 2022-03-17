@@ -694,11 +694,15 @@ section .title::after {
 
 footer {
     background: #111;
-    padding: 25px 50px 25px 50px;
+    padding: 25px 70px 25px 50px;
     color: #fff;
     text-align: center;
     display: flex;
     justify-content: space-between;
+}
+
+footer p {
+    font-size: 18px;
 }
 
 footer a {
