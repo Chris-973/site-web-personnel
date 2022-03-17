@@ -616,6 +616,10 @@ section .title::after {
     color: #333;
 }
 
+.contact .contact-content .info .sub-title a {
+    color: #000;
+}
+
 .contact .right form .fields {
     display: flex;
 }
@@ -690,17 +694,19 @@ section .title::after {
 
 footer {
     background: #111;
-    padding: 15px 23px;
+    padding: 25px 50px 25px 50px;
     color: #fff;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-footer span a {
+footer a {
     color: #004B94;
     text-decoration: none;
 }
 
-footer span a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -815,6 +821,12 @@ footer span a:hover {
     }
     .apropos .apropos-content .right .text {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 596px) {
+    footer {
+        display: inline-block;
     }
 }
 
