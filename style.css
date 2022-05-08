@@ -449,19 +449,31 @@ section .title::after {
 }
 
 .competences-content .right .js::before {
-    width: 50%;
+    width: 65%;
 }
 
-.competences-content .right .php::before {
+.competences-content .right .java::before {
+    width: 70%;
+}
+
+.competences-content .right .javaFX::before {
+    width: 70%;
+}
+
+.competences-content .right .sql::before {
+    width: 70%;
+}
+
+.competences-content .right .bash::before {
     width: 60%;
 }
 
-.competences-content .right .mysql::before {
-    width: 55%;
+.competences-content .right .git::before {
+    width: 80%;
 }
 
-.competences-content .right .git::before {
-    width: 50%;
+.competences-content .right .ascii::before {
+    width: 80%;
 }
 
 
@@ -888,6 +900,6 @@ footer a:hover {
 
 @media (max-width: 450px) {
     footer p {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
