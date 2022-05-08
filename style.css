@@ -485,11 +485,12 @@ section .title::after {
 
 .teams .carousel .card {
     background: #222;
-    border-radius: 6px;
+    border-radius: 20px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    /* height: 550px; */
 }
 
 .teams .carousel .card:hover {
@@ -729,7 +730,17 @@ footer a:hover {
 
 /* Partie responsive */
 
+@media(max-width: 1244px){
+    .teams .carousel .card{
+        height: 540px;
+    }
+    .teams .carousel .card p{
+        font-size: 14px;
+    }
+}
+
 @media(max-width: 1196px) {
+
     .accueil .accueil-content .text-2 {
         font-size: 70px;
     }
@@ -745,7 +756,29 @@ footer a:hover {
     }
 }
 
+@media(max-width: 1080px){
+    .teams .carousel .card .text{
+        font-size: 20px;
+    }
+    .teams .carousel .card{
+        /* height: 570px; */
+    }
+    .teams .carousel .card p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 1000px){
+    .teams .carousel .card .text{
+        font-size: 25px;
+    }
+    .teams .carousel .card p{
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 991px) {
+
     .max-width {
         padding: 0 50px;
     }
@@ -820,6 +853,17 @@ footer a:hover {
     footer p {
         font-size: 16px;
     }
+}
+
+@media(max-width: 900px){
+    .teams .carousel .card{
+        height: 450px;
+    }
+
+    .teams .carousel .card p{
+        font-size: 16px;
+    }
+    
 }
 
 @media (max-width: 859px) {
